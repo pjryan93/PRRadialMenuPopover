@@ -1,0 +1,15 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'PRRadialMenuPopover_Example', :exclusive => true do
+  pod "PRRadialMenuPopover", :path => "../"
+end
+
+target 'PRRadialMenuPopover_Tests', :exclusive => true do
+  pod "PRRadialMenuPopover", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+  pod 'FBSnapshotTestCase'
+  pod 'Expecta+Snapshots'
+end
