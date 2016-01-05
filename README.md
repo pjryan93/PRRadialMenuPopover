@@ -11,7 +11,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
     
     
-Create an array of buttons. To pass to the PopOver Menu.  The menu will adjust to the number of buttons in the array.  You must set an image for the highlated and normal state of the button.  Below is an easy way to make circular buttons.
+Create an array of buttons to pass to the PopOverMenu.  The menu will adjust to the number of buttons in the array.  You must set an image for the highlated and normal state of the buttons.  Below is an easy way to make circular buttons.
    ```Objective-C
    
     CGRect frame = CGRectMake(0, 0, 44, 44);
@@ -56,9 +56,9 @@ Create an array of buttons. To pass to the PopOver Menu.  The menu will adjust t
     buttonView4.layer.shadowOffset = CGSizeMake(0, 0);
     buttonView4.layer.shadowRadius = 2.0;
     buttonView4.layer.shadowOpacity = 0.4;
-   
+   NSArray *buttonArray = @[buttonView, buttonView2, buttonView3, buttonView4];
    ```
-   Next create the PRPopoverButtonMenu.
+   Next create the PRPopoverButtonMenu, assign the delegate, and add the gesture reconizer.
    
    ```Objective-C
    self.touchContextMenu = [[PRPopoverButtonMenu alloc] initWithFrame:self.collectionView.frame
@@ -79,6 +79,14 @@ Create an array of buttons. To pass to the PopOver Menu.  The menu will adjust t
    ```
    
     4)add the delegate methods to the collectionviewcontroller
+    
+    Used this method to show the menu.  Make sure there is a valid cell on the point pushed.
+    - (BOOL) buttonMenu:(PRPopoverButtonMenu*)buttonMenu shouldShowAtPoint:(CGPoint)point 
+    
+    Used this method get the index of a pushed button. The Point returned is the point of the gesture.
+    
+    - (void) buttonAtIndex:(PRPopoverButtonMenu *)buttonManager didSelectButton:(NSInteger)index atPoint:(CGPoint)point 
+    
      ```Objective-C
      //Use this method to gurantee the location of the push was over a valid cell.
     - (BOOL) buttonMenu:(PRPopoverButtonMenu*)buttonMenu shouldShowAtPoint:(CGPoint)point {
