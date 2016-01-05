@@ -86,7 +86,7 @@ Create an array of buttons to pass to the PopOverMenu.  The menu will adjust to 
     Used this method get the index of a pushed button. The Point returned is the point of the gesture.
     - (void) buttonAtIndex:(PRPopoverButtonMenu *)buttonManager didSelectButton:(NSInteger)index atPoint:(CGPoint)point 
     
-     ```Objective-C
+   ```Objective-C
      //Use this method to gurantee the location of the push was over a valid cell.
     - (BOOL) buttonMenu:(PRPopoverButtonMenu*)buttonMenu shouldShowAtPoint:(CGPoint)point {
             return ( [self.collectionView cellForItemAtIndexPath:[self.collectionView indexPathForItemAtPoint:point]] != nil );
@@ -114,7 +114,7 @@ Create an array of buttons to pass to the PopOverMenu.  The menu will adjust to 
         }
 
     }
-    '''
+   ```
     
     
 ## Requirements
