@@ -1,15 +1,15 @@
 {
   "name": "PRRadialMenuPopover",
   "version": "0.1.0",
-  "summary": "A short description of PRRadialMenuPopover.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/PRRadialMenuPopover",
+  "summary": "PRRadialMenu is a menu of buttons that extends radially from a push point in a collection view actiated by a long press reconizer.",
+  "description": "PRRadialMenu is a menu of buttons that extends radially from a push point in a collection view actiated by a long press reconizer. The menu is shown after a long press. The menu adjusts spacing based off the number of buttons.  It allows users to quickly peform multiple actions on cells in a collectionview. More updates coming soon.",
+  "homepage": "https://github.com/pjryan93/PRRadialMenuPopover",
   "license": "MIT",
   "authors": {
     "Patrick Ryan": "pjryan@my.okcu.edu"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/PRRadialMenuPopover.git",
+    "git": "https://github.com/pjryan93/PRRadialMenuPopover.git",
     "tag": "0.1.0"
   },
   "platforms": {

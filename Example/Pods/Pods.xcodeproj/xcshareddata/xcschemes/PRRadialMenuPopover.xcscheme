@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9679C5FB2FE4CA211E8845E3'
+               BlueprintIdentifier = 'E78570FD25567E798FDB5007'
                BlueprintName = 'PRRadialMenuPopover'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'PRRadialMenuPopover.framework'>
