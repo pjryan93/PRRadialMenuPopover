@@ -15,9 +15,9 @@ Create an array of buttons and another of strings to pass to the menu. Then Crea
     
    ```Objective-C
    self.touchContextMenu = [[PRPopoverButtonMenu alloc] initWithFrame:self.collectionView.frame
-        withButtons:buttons     
-        helpText:helpText      
-        controller:self         
+        withButtons:buttons   //array of buttons  
+        helpText:helpText     //array of text to be displayed above buttons
+        controller:self       //CollectionViewController using the menu, needed to translate coords
         withOffset:offset       
         labelSize:CGSizeMake(60, 20)    
         withRadius:80       
