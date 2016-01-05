@@ -77,14 +77,13 @@ Create an array of buttons to pass to the PopOverMenu.  The menu will adjust to 
     //add the gesture reconizer to the collection view
     [self.collectionView addGestureRecognizer:self.touchContextMenu.longPressReconizer];
    ```
-   
     Add the two delegate methods to the collectionviewcontroller
     
     Used this method to show the menu.  Make sure there is a valid cell on the point pushed.
-    - (BOOL) buttonMenu:(PRPopoverButtonMenu*)buttonMenu shouldShowAtPoint:(CGPoint)point 
+    shouldShowAtPoint:(CGPoint)point 
     
     Used this method get the index of a pushed button. The Point returned is the point of the gesture.
-    - (void) buttonAtIndex:(PRPopoverButtonMenu *)buttonManager didSelectButton:(NSInteger)index atPoint:(CGPoint)point 
+    didSelectButton:(NSInteger)index atPoint:(CGPoint)point 
     
    ```Objective-C
      //Use this method to gurantee the location of the push was over a valid cell.
