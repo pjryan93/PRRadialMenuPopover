@@ -10,9 +10,10 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
     
-   1) Create an array of buttons and another of strings to pass to the menu
-     Then Create an instance of PRPopoverButtonMenu.
-   
+    
+    Create an array of buttons and another of strings to pass to the menu. Then Create an instance of PRPopoverButtonMenu.
+    
+   '''
    self.touchContextMenu = [[PRPopoverButtonMenu alloc] initWithFrame:self.collectionView.frame
         withButtons:buttons     //array of buttons
         helpText:helpText       //array of help label text
@@ -22,13 +23,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
         withRadius:80        //radius from center of gesture to button
         angleScaler:2.1     // a scalar the alters the distance between the buttons.
         initialThetaOffset:0];  //initial offset of the arc the buttons are laid out on
-    
-    2) set the delegate
+
     self.touchContextMenu.delegate = self;
     
-    3) add the reconizer
-    //add the reconizer
     [self.collectionView addGestureRecognizer:self.touchContextMenu.longPressReconizer];
+   '''
    
     4)add the delegate methods to the collectionviewcontroller
     
