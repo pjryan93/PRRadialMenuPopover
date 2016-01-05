@@ -21,5 +21,6 @@
     "PRRadialMenuPopover": [
       "Pod/Assets/*.png"
     ]
-  }
+  },
+  "frameworks": "UIKit"
 }
