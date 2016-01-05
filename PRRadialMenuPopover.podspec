@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "PRRadialMenuPopover"
-  s.version          = "0.1.0"
-  s.summary          = "Menu of buttons that extends radially from a push point in a collection view actiated by a long press reconizer."
+  s.version          = "0.1.1"
+  s.summary          = "Menu that extends radially from a pushed point."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -24,7 +24,9 @@ Pod::Spec.new do |s|
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Patrick Ryan" => "pjryan@my.okcu.edu" }
-  s.source           = { :git => "https://github.com/pjryan93/PRRadialMenuPopover.git", :tag => s.version.to_s }
+  s.source           = {
+    :git => "https://github.com/pjryan93/PRRadialMenuPopover.git",
+    :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'
