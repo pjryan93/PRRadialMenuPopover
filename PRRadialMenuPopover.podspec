@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "PRRadialMenuPopover"
   s.version          = "0.1.0"
-  s.summary          = "A short description of PRRadialMenuPopover."
+  s.summary          = "  PRRadialMenu is a menu of buttons that extends radially from a push point in a collection view actiated by a long press reconizer.  It allows users to quickly peform multiple actions on cells in a collectionview"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
-  PRRadialMenu is a menu of buttons that extends radially from a push point in a collection view. The menu is shown after a long press. The menu adjusts spacing based off the number of buttons. More updates coming soon.
+  PRRadialMenu is a menu of buttons that extends radially from a push point in a collection view actiated by a long press reconizer. The menu is shown after a long press. The menu adjusts spacing based off the number of buttons.  It allows users to quickly peform multiple actions on cells in a collectionview. More updates coming soon.
                        DESC
 
   s.homepage         = "https://github.com/pjryan93/PRRadialMenuPopover"
