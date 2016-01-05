@@ -9,6 +9,7 @@
 #import "PRCollectionViewController.h"
 @interface PRCollectionViewController ()
 @property PRPopoverButtonMenu *touchContextMenu;
+@property NSInteger cellNumber;
 @end
 
 @implementation PRCollectionViewController
@@ -18,27 +19,64 @@ static NSString * const reuseIdentifier = @"cell";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //number of cells in collectionView
+    self.cellNumber = 10;
     
-    NSArray *helpText = @[ NSLocalizedString(@"Action 1", @""), NSLocalizedString(@"Action 2", @""), NSLocalizedString(@"Delete", @"") ];
+    //Text Displayed above buttons
+    NSArray *helpText = @[ NSLocalizedString(@"Action 1", @""), NSLocalizedString(@"Action 2", @""), NSLocalizedString(@"Action 3", @""), NSLocalizedString(@"Delete", @"") ];
+    //Array of UIButtons to be displayed.
     NSArray *buttons = [self touchContextMenuButtons];
-    CGFloat offset = self.navigationController.navigationBar.frame.origin.x +
-    self.navigationController.navigationBar.frame.size.height;
+    CGFloat offset = 0;
     
+    //create the menu
    self.touchContextMenu = [[PRPopoverButtonMenu alloc] initWithFrame:self.collectionView.frame
-        withButtons:buttons
-        helpText:helpText
-        controller:self
-        withOffset:offset
-        labelSize:CGSizeMake(60, 20)
-        withRadius:80
-        angleScaler:2.1
-        initialThetaOffset:0];
+        withButtons:buttons     //array of buttons
+        helpText:helpText       //array of help label text
+        controller:self         // the controller collectionviewController
+        withOffset:offset       //offset between nav bar
+        labelSize:CGSizeMake(60, 20)    //help label size
+        withRadius:80        //radius from center of gesture to button
+        angleScaler:2.1     // a scalar the alters the distance between the buttons.
+        initialThetaOffset:0];  //initial offset of the arc the buttons are laid out on
     
+    //set the delegate
     self.touchContextMenu.delegate = self;
+    
+    //add the reconizer
     [self.collectionView addGestureRecognizer:self.touchContextMenu.longPressReconizer];
 
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
+#pragma mark - Touch Context Delegate
+
+- (BOOL) buttonMenu:(PRPopoverButtonMenu*)buttonMenu shouldShowAtPoint:(CGPoint)point {
+    return ( [self.collectionView cellForItemAtIndexPath:[self.collectionView indexPathForItemAtPoint:point]] != nil );
+}
+
+- (void) buttonAtIndex:(PRPopoverButtonMenu *)buttonManager didSelectButton:(NSInteger)index atPoint:(CGPoint)point {
+    
+    NSIndexPath *cellPath = [self.collectionView indexPathForItemAtPoint:point];
+    UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:cellPath];
+    
+    if ( !cell ) {
+        return;
+    }
+    
+    
+    if ( index == 0 ) {
+        NSLog(@"Action 1");
+    } else if ( index == 1 ) {
+        NSLog(@"Action 2");
+    }else if(index == 2){
+        NSLog(@"Action 3");
+    }else {
+        NSLog(@"Delete");
+        self.cellNumber--;
+        [self.collectionView deleteItemsAtIndexPaths:@[cellPath]];
+    }
+}
+
 
 - (NSArray *) touchContextMenuButtons {
     CGRect frame = CGRectMake(0, 0, 44, 44);
@@ -56,8 +94,13 @@ static NSString * const reuseIdentifier = @"cell";
     
     UIButton *buttonView3 = [[UIButton alloc]initWithFrame:frame];
     
-    [buttonView3 setImage:[UIImage imageNamed:@"Image-1"] forState:UIControlStateNormal];
-    [buttonView3 setImage:[UIImage imageNamed:@"Image"] forState:UIControlStateHighlighted];
+    [buttonView3 setImage:[UIImage imageNamed:@"Image-3"] forState:UIControlStateNormal];
+    [buttonView3 setImage:[UIImage imageNamed:@"Image-2"] forState:UIControlStateHighlighted];
+    
+    UIButton *buttonView4 = [[UIButton alloc]initWithFrame:frame];
+    
+    [buttonView4 setImage:[UIImage imageNamed:@"Image-1"] forState:UIControlStateNormal];
+    [buttonView4 setImage:[UIImage imageNamed:@"Image"] forState:UIControlStateHighlighted];
     
     buttonView.layer.shadowColor = [UIColor colorWithWhite:0.0 alpha:1.0].CGColor;
     buttonView.layer.shadowOffset = CGSizeMake(0, 0);
@@ -73,8 +116,13 @@ static NSString * const reuseIdentifier = @"cell";
     buttonView3.layer.shadowOffset = CGSizeMake(0, 0);
     buttonView3.layer.shadowRadius = 2.0;
     buttonView3.layer.shadowOpacity = 0.4;
+    
+    buttonView4.layer.shadowColor = [UIColor colorWithWhite:0.0 alpha:1.0].CGColor;
+    buttonView4.layer.shadowOffset = CGSizeMake(0, 0);
+    buttonView4.layer.shadowRadius = 2.0;
+    buttonView4.layer.shadowOpacity = 0.4;
 
-    return @[buttonView, buttonView2, buttonView3];
+    return @[buttonView, buttonView2, buttonView3,buttonView4];
 }
 
 - (void)didReceiveMemoryWarning
@@ -91,7 +139,7 @@ static NSString * const reuseIdentifier = @"cell";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 10;
+    return self.cellNumber;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -101,61 +149,7 @@ static NSString * const reuseIdentifier = @"cell";
     return cell;
 }
 
-#pragma mark - Touch Context Delegate
 
-- (BOOL) buttonMenu:(PRPopoverButtonMenu*)buttonMenu shouldShowAtPoint:(CGPoint)point {
-    return ( [self.collectionView cellForItemAtIndexPath:[self.collectionView indexPathForItemAtPoint:point]] != nil );
-}
 
-- (void) buttonAtIndex:(PRPopoverButtonMenu *)buttonManager didSelectButton:(NSInteger)index atPoint:(CGPoint)point {
-    static NSInteger kScheduleIndex = 0;
-    static NSInteger kDeleteIndex = 1;
-    
-    NSIndexPath *cellPath = [self.collectionView indexPathForItemAtPoint:point];
-    UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:cellPath];
-    
-    if ( !cell ) {
-        return;
-    }
-    
-    
-    if ( index == kScheduleIndex ) {
-        NSLog(@"Action 1");
-    } else if ( index == kDeleteIndex ) {
-        NSLog(@"Action 2");
-    }else{
-        NSLog(@"Delete");
-    }
-}
-#pragma mark <UICollectionViewDelegate>
-
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
-}
-*/
-
-/*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
-}
-
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
-}
-*/
 
 @end
