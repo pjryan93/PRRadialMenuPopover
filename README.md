@@ -5,12 +5,14 @@
 [![License](https://img.shields.io/cocoapods/l/PRRadialMenuPopover.svg?style=flat)](http://cocoapods.org/pods/PRRadialMenuPopover)
 [![Platform](https://img.shields.io/cocoapods/p/PRRadialMenuPopover.svg?style=flat)](http://cocoapods.org/pods/PRRadialMenuPopover)
 
+<img src="https://cloud.githubusercontent.com/assets/7769635/12105902/236203e0-b31f-11e5-902a-659ae0364843.gif" width="30%"></img> 
+
+PRRadialMenu is a menu of buttons that extends from a point in a collection view.  The menu is shown after a long press.  The menu adjusts spacing based off the number of buttons.  More updates coming soon.   
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-    
-    
 Create an array of buttons to pass to the PopOverMenu.  The menu will adjust to the number of buttons in the array.  You must set an image for the highlated and normal state of the buttons.  Below is an easy way to make circular buttons.
    ```Objective-C
    
