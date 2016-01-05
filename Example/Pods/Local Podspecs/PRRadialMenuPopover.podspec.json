@@ -1,0 +1,25 @@
+{
+  "name": "PRRadialMenuPopover",
+  "version": "0.1.0",
+  "summary": "A short description of PRRadialMenuPopover.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/PRRadialMenuPopover",
+  "license": "MIT",
+  "authors": {
+    "Patrick Ryan": "pjryan@my.okcu.edu"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/PRRadialMenuPopover.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "PRRadialMenuPopover": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

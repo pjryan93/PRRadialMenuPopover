@@ -7,7 +7,8 @@
 //
 
 @import UIKit;
+#import <PRRadialMenuPopover/PRPopoverButtonMenu.h>
 
-@interface PRViewController : UIViewController
+@interface PRCollectionViewController : UICollectionViewController <UICollectionViewDelegate, PRPopoverMenuDelegate>
 
 @end
