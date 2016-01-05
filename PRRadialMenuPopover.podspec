@@ -17,13 +17,14 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+  PRRadialMenu is a menu of buttons that extends radially from a push point in a collection view. The menu is shown after a long press. The menu adjusts spacing based off the number of buttons. More updates coming soon.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/PRRadialMenuPopover"
+  s.homepage         = "https://github.com/pjryan93/PRRadialMenuPopover"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Patrick Ryan" => "pjryan@my.okcu.edu" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/PRRadialMenuPopover.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/pjryan93/PRRadialMenuPopover.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
