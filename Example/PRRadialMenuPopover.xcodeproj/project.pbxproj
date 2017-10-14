@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0574532482C394F1A26FBD56 /* Pods_PRRadialMenuPopover_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CADC405CE41303F9DABA5E8 /* Pods_PRRadialMenuPopover_Example.framework */; };
-		104794490E8AA4AE9CAB6D5D /* Pods_PRRadialMenuPopover_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37248808CD232A32FF5D3B61 /* Pods_PRRadialMenuPopover_Tests.framework */; };
+		432CDE116A43EF5714A06836 /* Pods_PRRadialMenuPopover_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBD2371E16F2760236D0940 /* Pods_PRRadialMenuPopover_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -23,6 +22,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		D23879044CFD8EE6406A181D /* Pods_PRRadialMenuPopover_Example_PRRadialMenuPopover_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3B6AC5F9D9377B16B5AA4D /* Pods_PRRadialMenuPopover_Example_PRRadialMenuPopover_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06E9A2A683643B9E30332079 /* Pods-PRRadialMenuPopover_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRRadialMenuPopover_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PRRadialMenuPopover_Tests/Pods-PRRadialMenuPopover_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		0644542057BE4A6DB054AA0B /* Pods-PRRadialMenuPopover_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRRadialMenuPopover_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PRRadialMenuPopover_Example/Pods-PRRadialMenuPopover_Example.release.xcconfig"; sourceTree = "<group>"; };
 		18B1099E153FFBA24F4D6E17 /* PRRadialMenuPopover.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PRRadialMenuPopover.podspec; path = ../PRRadialMenuPopover.podspec; sourceTree = "<group>"; };
-		2CADC405CE41303F9DABA5E8 /* Pods_PRRadialMenuPopover_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PRRadialMenuPopover_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		37248808CD232A32FF5D3B61 /* Pods_PRRadialMenuPopover_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PRRadialMenuPopover_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D86A9AE3E1CE0B231E2A81C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		5C20EC90AE64101FD4215E5E /* Pods-PRRadialMenuPopover_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRRadialMenuPopover_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PRRadialMenuPopover_Example/Pods-PRRadialMenuPopover_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		497E4852C03F484AAF15BA76 /* Pods-PRRadialMenuPopover_Example-PRRadialMenuPopover_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRRadialMenuPopover_Example-PRRadialMenuPopover_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PRRadialMenuPopover_Example-PRRadialMenuPopover_Tests/Pods-PRRadialMenuPopover_Example-PRRadialMenuPopover_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* PRRadialMenuPopover_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PRRadialMenuPopover_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,10 +59,12 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		62076B920FF2A3A9B0D812E3 /* Pods-PRRadialMenuPopover_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRRadialMenuPopover_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PRRadialMenuPopover_Example/Pods-PRRadialMenuPopover_Example.release.xcconfig"; sourceTree = "<group>"; };
-		73219968F627849BB46CE137 /* Pods-PRRadialMenuPopover_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRRadialMenuPopover_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PRRadialMenuPopover_Tests/Pods-PRRadialMenuPopover_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C6B6CD39F74EBD1A65B1DA8 /* Pods-PRRadialMenuPopover_Example-PRRadialMenuPopover_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRRadialMenuPopover_Example-PRRadialMenuPopover_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PRRadialMenuPopover_Example-PRRadialMenuPopover_Tests/Pods-PRRadialMenuPopover_Example-PRRadialMenuPopover_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9907CA6F52BE8EACB1B78514 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FA3B6AC5F9D9377B16B5AA4D /* Pods_PRRadialMenuPopover_Example_PRRadialMenuPopover_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PRRadialMenuPopover_Example_PRRadialMenuPopover_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC415538710969ED9EDB926B /* Pods-PRRadialMenuPopover_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRRadialMenuPopover_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PRRadialMenuPopover_Example/Pods-PRRadialMenuPopover_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FDBD2371E16F2760236D0940 /* Pods_PRRadialMenuPopover_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PRRadialMenuPopover_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				0574532482C394F1A26FBD56 /* Pods_PRRadialMenuPopover_Example.framework in Frameworks */,
+				432CDE116A43EF5714A06836 /* Pods_PRRadialMenuPopover_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				104794490E8AA4AE9CAB6D5D /* Pods_PRRadialMenuPopover_Tests.framework in Frameworks */,
+				D23879044CFD8EE6406A181D /* Pods_PRRadialMenuPopover_Example_PRRadialMenuPopover_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +101,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				B3CCDE6821C85B5C141B9DD9 /* Pods */,
+				89D99D6BF74675EB4280279E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,8 +121,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				2CADC405CE41303F9DABA5E8 /* Pods_PRRadialMenuPopover_Example.framework */,
-				37248808CD232A32FF5D3B61 /* Pods_PRRadialMenuPopover_Tests.framework */,
+				FDBD2371E16F2760236D0940 /* Pods_PRRadialMenuPopover_Example.framework */,
+				FA3B6AC5F9D9377B16B5AA4D /* Pods_PRRadialMenuPopover_Example_PRRadialMenuPopover_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -182,13 +182,13 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		B3CCDE6821C85B5C141B9DD9 /* Pods */ = {
+		89D99D6BF74675EB4280279E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5C20EC90AE64101FD4215E5E /* Pods-PRRadialMenuPopover_Example.debug.xcconfig */,
-				62076B920FF2A3A9B0D812E3 /* Pods-PRRadialMenuPopover_Example.release.xcconfig */,
-				73219968F627849BB46CE137 /* Pods-PRRadialMenuPopover_Tests.debug.xcconfig */,
-				06E9A2A683643B9E30332079 /* Pods-PRRadialMenuPopover_Tests.release.xcconfig */,
+				FC415538710969ED9EDB926B /* Pods-PRRadialMenuPopover_Example.debug.xcconfig */,
+				0644542057BE4A6DB054AA0B /* Pods-PRRadialMenuPopover_Example.release.xcconfig */,
+				7C6B6CD39F74EBD1A65B1DA8 /* Pods-PRRadialMenuPopover_Example-PRRadialMenuPopover_Tests.debug.xcconfig */,
+				497E4852C03F484AAF15BA76 /* Pods-PRRadialMenuPopover_Example-PRRadialMenuPopover_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -200,12 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "PRRadialMenuPopover_Example" */;
 			buildPhases = (
-				AC69CBEE718571C73B19EB52 /* Check Pods Manifest.lock */,
+				6C0F794E28A1BA58BE858D9E /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				06C6F84E6304C3CA779CB35F /* Embed Pods Frameworks */,
-				ABBFBFD28F88CFAD4BEFCA99 /* Copy Pods Resources */,
+				BB7E3F3FE812D618678689CE /* [CP] Embed Pods Frameworks */,
+				D64499A845DEB14E197294CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,12 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "PRRadialMenuPopover_Tests" */;
 			buildPhases = (
-				AD28BFDB3066E09D334EECA5 /* Check Pods Manifest.lock */,
+				7987F70671F90D6ED5D7C3A7 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				5227CFB9DFC4D1234CEBF99C /* Embed Pods Frameworks */,
-				A27B1ADB7E0CBED589F2614C /* Copy Pods Resources */,
+				2760CE70E014E621E43B4EEE /* [CP] Embed Pods Frameworks */,
+				5E58E7092B4922ED57234096 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,7 +247,11 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Patrick Ryan";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 85BPX9TXS7;
+					};
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = 85BPX9TXS7;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -293,94 +297,114 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		06C6F84E6304C3CA779CB35F /* Embed Pods Frameworks */ = {
+		2760CE70E014E621E43B4EEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PRRadialMenuPopover_Example-PRRadialMenuPopover_Tests/Pods-PRRadialMenuPopover_Example-PRRadialMenuPopover_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PRRadialMenuPopover/PRRadialMenuPopover.framework",
+				"${BUILT_PRODUCTS_DIR}/Expecta/Expecta.framework",
+				"${BUILT_PRODUCTS_DIR}/Expecta+Snapshots/Expecta_Snapshots.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
+				"${BUILT_PRODUCTS_DIR}/Specta/Specta.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PRRadialMenuPopover.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expecta.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expecta_Snapshots.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Specta.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PRRadialMenuPopover_Example-PRRadialMenuPopover_Tests/Pods-PRRadialMenuPopover_Example-PRRadialMenuPopover_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E58E7092B4922ED57234096 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PRRadialMenuPopover_Example-PRRadialMenuPopover_Tests/Pods-PRRadialMenuPopover_Example-PRRadialMenuPopover_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C0F794E28A1BA58BE858D9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PRRadialMenuPopover_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7987F70671F90D6ED5D7C3A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PRRadialMenuPopover_Example-PRRadialMenuPopover_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB7E3F3FE812D618678689CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PRRadialMenuPopover_Example/Pods-PRRadialMenuPopover_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PRRadialMenuPopover/PRRadialMenuPopover.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PRRadialMenuPopover.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PRRadialMenuPopover_Example/Pods-PRRadialMenuPopover_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5227CFB9DFC4D1234CEBF99C /* Embed Pods Frameworks */ = {
+		D64499A845DEB14E197294CC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PRRadialMenuPopover_Tests/Pods-PRRadialMenuPopover_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A27B1ADB7E0CBED589F2614C /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PRRadialMenuPopover_Tests/Pods-PRRadialMenuPopover_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ABBFBFD28F88CFAD4BEFCA99 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PRRadialMenuPopover_Example/Pods-PRRadialMenuPopover_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AC69CBEE718571C73B19EB52 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		AD28BFDB3066E09D334EECA5 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -531,10 +555,11 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C20EC90AE64101FD4215E5E /* Pods-PRRadialMenuPopover_Example.debug.xcconfig */;
+			baseConfigurationReference = FC415538710969ED9EDB926B /* Pods-PRRadialMenuPopover_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 85BPX9TXS7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PRRadialMenuPopover/PRRadialMenuPopover-Prefix.pch";
 				INFOPLIST_FILE = "PRRadialMenuPopover/PRRadialMenuPopover-Info.plist";
@@ -548,10 +573,11 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62076B920FF2A3A9B0D812E3 /* Pods-PRRadialMenuPopover_Example.release.xcconfig */;
+			baseConfigurationReference = 0644542057BE4A6DB054AA0B /* Pods-PRRadialMenuPopover_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 85BPX9TXS7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PRRadialMenuPopover/PRRadialMenuPopover-Prefix.pch";
 				INFOPLIST_FILE = "PRRadialMenuPopover/PRRadialMenuPopover-Info.plist";
@@ -565,10 +591,11 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73219968F627849BB46CE137 /* Pods-PRRadialMenuPopover_Tests.debug.xcconfig */;
+			baseConfigurationReference = 7C6B6CD39F74EBD1A65B1DA8 /* Pods-PRRadialMenuPopover_Example-PRRadialMenuPopover_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 85BPX9TXS7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -590,10 +617,11 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06E9A2A683643B9E30332079 /* Pods-PRRadialMenuPopover_Tests.release.xcconfig */;
+			baseConfigurationReference = 497E4852C03F484AAF15BA76 /* Pods-PRRadialMenuPopover_Example-PRRadialMenuPopover_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 85BPX9TXS7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0900"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ED4342E27597144E22BA4081D52F6DD1"
+               BlueprintIdentifier = "E427C6DCA153E01C52C89563011E9C39"
                BuildableName = "Expecta_Snapshots.framework"
                BlueprintName = "Expecta+Snapshots"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ED4342E27597144E22BA4081D52F6DD1"
+            BlueprintIdentifier = "E427C6DCA153E01C52C89563011E9C39"
             BuildableName = "Expecta_Snapshots.framework"
             BlueprintName = "Expecta+Snapshots"
             ReferencedContainer = "container:Pods.xcodeproj">
