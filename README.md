@@ -80,10 +80,10 @@ Create an array of buttons to pass to the PopOverMenu.  The menu will adjust to 
    ```
     Add the two delegate methods to the collectionviewcontroller
     
-    Used this method to show the menu.  Make sure there is a valid cell on the point pushed.
+    Use this method to show the menu.  Make sure there is a valid cell on the point pushed.
     shouldShowAtPoint:(CGPoint)point 
     
-    Used this method get the index of a pushed button. The Point returned is the point of the gesture.
+    Use this method get the index of a pushed button. The Point returned is the point of the gesture.
     didSelectButton:(NSInteger)index atPoint:(CGPoint)point 
     
    ```Objective-C
