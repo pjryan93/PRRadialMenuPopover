@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "PRRadialMenuPopover"
-  s.version          = "0.1.1"
+  s.version          = "0.1.0"
   s.summary          = "Menu that extends radially from a pushed point."
 
 # This description is used to generate tags and improve search results.
