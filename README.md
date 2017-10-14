@@ -116,8 +116,7 @@ Create an array of buttons to pass to the PopOverMenu.  The menu will adjust to 
     }
    ```
     
-    
-## Requirements
+  
 
 ## Installation
 
