@@ -1,6 +1,5 @@
 # PRRadialMenuPopover
 
-[![CI Status](http://img.shields.io/travis/Patrick Ryan/PRRadialMenuPopover.svg?style=flat)](https://travis-ci.org/Patrick Ryan/PRRadialMenuPopover)
 [![Version](https://img.shields.io/cocoapods/v/PRRadialMenuPopover.svg?style=flat)](http://cocoapods.org/pods/PRRadialMenuPopover)
 [![License](https://img.shields.io/cocoapods/l/PRRadialMenuPopover.svg?style=flat)](http://cocoapods.org/pods/PRRadialMenuPopover)
 [![Platform](https://img.shields.io/cocoapods/p/PRRadialMenuPopover.svg?style=flat)](http://cocoapods.org/pods/PRRadialMenuPopover)
@@ -131,7 +130,7 @@ pod "PRRadialMenuPopover"
 
 ## Author
 
-Patrick Ryan, pjryan@my.okcu.edu
+Patrick Ryan, patrick@patrickjryan.net
 
 ## License
 
